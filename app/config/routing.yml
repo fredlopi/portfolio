@@ -1,4 +1,4 @@
-app:
-    resource: "@AppBundle/Controller/"
+portfolio:
+    resource: "@PortfolioBundle/Controller/"
     type:     annotation
-    host:     "perso.dev"
+    prefix:   /

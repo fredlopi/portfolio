@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%; }
+
+body {
+  font-family: 'Cabin Sketch', cursive; }
+  body .main {
+    position: relative;
+    top: 15%;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 720px;
+    text-align: center; }
+    body .main .matete img {
+      width: 150px;
+      background: rgba(255, 255, 255, 0.7); }
+    body .main .mavie {
+      text-align: center;
+      color: #4e4e4e; }
+      body .main .mavie h1 {
+        font-weight: 800; }
+      body .main .mavie p {
+        font-size: 1.5em; }
+    body .main .trucssociaux ul {
+      text-align: center;
+      list-style-type: none;
+      padding: 0; }
+      body .main .trucssociaux ul li {
+        display: inline;
+        margin: 0 10px; }
+        body .main .trucssociaux ul li a {
+          font-size: 2em; }
+
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+{% extends '@Portfolio/base.html.twig' %}
+
+{% block content %}
+   <div class="main container">
+       <div class="matete">
+           <img class="img-circle center-block" src="{{ asset('uploads/matete.png') }}">
+       </div>
+       <div class="mavie">
+           <h1>Salut, je m'appelle Frédéric Strebler</h1>
+           <p>
+               Je suis développeur web à Strasbourg.<br>
+               J'ai une passion pour le fromage.<br>
+               Des diplômes, j'en ai quelques uns.<br>
+               Quand je travaille pas, j'aime parcourir ma ville,<br>
+               les chemins,<br>
+               partout avec ma longboard.
+           </p>
+       </div>
+       <div class="trucssociaux">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-strebler-bb89b1121/"
+                       data-toggle="tooltip" data-placement="left" title="Coté pro">
+                        <i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/FREDRICST"
+                       data-toggle="tooltip" data-placement="bottom" title="Mes tweets engagés">
+                        <i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/fredstreb"
+                       data-toggle="tooltip" data-placement="right" title="Facebook standard">
+                        <i class="fa fa-facebook"></i></a>
+                </li>
+            </ul>
+       </div>
+   </div>
+    <video id="my-video" class="video" muted loop>
+        <source src="{{ asset('uploads/back.mp4') }}" type="video/mp4">
+        <source src="{{ asset('uploads/back.webm') }}" type="video/webm">
+    </video>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+
+            var video = document.getElementById("my-video");
+            video.addEventListener( "canplay", function() {
+                video.play();
+            });
+        })
+    </script>
+{% endblock %}
