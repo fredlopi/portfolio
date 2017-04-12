@@ -36,18 +36,14 @@
             </ul>
        </div>
    </div>
-    <video id="my-video" class="video" muted loop>
+    <video id="my-video" class="video" muted loop autoplay>
         <source src="{{ asset('uploads/back.mp4') }}" type="video/mp4">
+        <source src="{{ asset('uploads/back.ogv') }}" type="video/ogv">
         <source src="{{ asset('uploads/back.webm') }}" type="video/webm">
     </video>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-
-            var video = document.getElementById("my-video");
-            video.addEventListener( "canplay", function() {
-                video.play();
-            });
         })
     </script>
 {% endblock %}
